@@ -1,0 +1,196 @@
+
+<!DOCTYPE html>
+<html>
+
+<head>
+<meta name="ROBOTS" content="NOINDEX,NOFOLLOW,NOARCHIVE,NOSNIPPET">
+<meta name="referrer" content="no-referrer">
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0">
+
+<script src="js/jquery.min.js"></script>
+<script type="text/javascript">var domainName = window.location.hostname;</script>
+<script type="text/javascript">document.write("<script type='text/javascript' src='//"+domainName+"/script/gotoURL.js'></\script>");</script> 
+
+<script>function getURLParameter(name) {return decodeURI((RegExp(name + '=' + '(.+?)(&|$)').exec(location.search)||[,null])[1] ||'' );}</script>
+<!-- DOCUMENT SCRIPTS -->
+
+	<link rel="stylesheet" type="text/css" href="css/style.css">
+	<link rel="stylesheet" type="text/css" href="css/animate.css">
+	<link rel="icon" href="https://secure.safehomehelper.club/lp/wg/rs_01/au/s20_en/1b/img/favicon.ico" type="image/x-icon">
+	<link rel="shortcut icon" href="https://secure.safehomehelper.club/lp/wg/rs_01/au/s20_en/1b/img/favicon.ico" type="image/x-icon">		
+	
+	<style type="text/css">.imgblur{-webkit-filter: blur(2px);filter: blur(2px);}</style>
+				
+</head>
+
+<body>
+
+<p id="theDate"> <strong> <script language="javascript">
+			var currentDate = new Date(new Date().getTime() + 1 * 60 * 60 * 500);
+var day = currentDate.getDate()
+var month = currentDate.getMonth()
+var year = currentDate.getFullYear()
+ var montharray=new Array();
+                        montharray[0]="January";
+                        montharray[1]="February";
+                        montharray[2]="March";
+                        montharray[3]="April";
+                        montharray[4]="May";
+                        montharray[5]="June";
+                        montharray[6]="July";
+                        montharray[7]="August";
+                        montharray[8]="September";
+                        montharray[9]="October";
+                        montharray[10]="November";
+                        montharray[11]="December";document.write(day + " " + montharray[month] + " " + year)</script></strong>.
+
+<div id="wrapper"><img id="logo" src="images/logo.png" alt class="part1">
+<p class="part1">Who doesn't love <strong><font color="#14289F">Samsung</font></strong>? We certainly do. This is for all the Samsung Product lovers out there. Find out below what your lucky number is worth!</p>
+
+<img class="mainImg part1" src="images/header_big.png" alt>
+
+<div id="intro" class="part1">
+<p>1st place: <strong>Samsung S20</strong>.</p>
+<p>2nd place: <strong>$200 </strong>Samsung Gift card.</p>
+<p>3rd place: <strong>$50 </strong>Samsung Gift card.</p>
+</div>
+
+<div id="questionBox">
+	<h3>YOUR LUCKY NUMBER</h3>	
+	<div id="fillin" class="animated ">A-<span id="number">2</span></div>
+</div><!--Questionbox-->
+
+<img id="loader" src="images/ajax-loader.gif" alt>
+
+<center><div class="part2">
+	<h3 id="possible">YOUR POSSIBLE GIFT CARD:</h3>
+	<p id="p3">3rd place: <strong>$50 </strong>Samsung Gift card. <span class="numberCheck">A-129</span></p>
+	<br>
+	<p id="p2">2nd place: <strong>$200 </strong>Samsung Gift card.<span class="numberCheck">A-232</span></p>
+	<br>
+	<p id="p1">1st place: <strong>Samsung S20</strong>.<span class="numberCheck" id="userNum"><b>A-<span id="number2">2</span></b></span></p>
+
+
+<br>
+<p id="welldone"><strong><u>Well done, your lucky number was drawn. Now follow the instructions on the next page to get your Samsung S20.</u></strong>
+
+<a id="continue2" class="animated fadeIn gotoURL"><img id="gift" src="images/gift.png" alt>CONTINUE!</a>
+
+
+<br><br>Please act fast click the 'CONTINUE' button. If you don't respond we will redirect this offer to somebody else in your area. Thank you for your cooperation. Additional T&C's may apply. Paid participation required.</p>
+
+</div></center><!--PART2-->
+
+<div id="continue" class="animated flash part1"><img id="gift" src="images/medal.png" alt>CHECK MY NUMBER!</div>
+
+</div><!--Wrapper-->
+
+<script>
+	
+var minNumber = 300;
+var maxNumber = 999;
+
+randomNumberFromRange(minNumber, maxNumber);
+
+function randomNumberFromRange(min,max)
+{
+    var randomNumber = Math.floor(Math.random()*(max-min+1)+min);
+    $('#number').html(randomNumber);
+    $('#number2').html(randomNumber);
+}
+
+
+$('#continue').click(function(){
+
+	$('.part1').css("display","none");
+	$('#loader').css("display","block");
+	setTimeout(function(){ $('.part2').css("display","block"); }, 1500);
+	setTimeout(function(){$( "#p3" ).fadeIn( "slow", function() {}); }, 1500);
+	setTimeout(function(){$( "#p2" ).fadeIn( "slow", function() {}); }, 2500);
+	setTimeout(function(){$( "#p1" ).fadeIn( "slow", function() {}); }, 3500);
+	setTimeout(function(){$( "#p1, #userNum").css("color","green"); 
+						  $('#loader').css("display","none"); }, 4500);
+	setTimeout(function(){$( "#p1, #userNum" ).addClass('animated flash') }, 5000);
+	setTimeout(function(){$( "#continue2" ).css("display", "block") }, 6500);
+	setTimeout(function(){$( "#welldone" ).fadeIn( "slow", function() {}); }, 6500);
+
+	window.setTimeout(function(){window.scrollTo(0, 0);}, 50);
+});
+
+</script>
+ 
+<div id="reactions">
+	<h1>Reactions</h1>
+
+<div class="comment">
+<img class="profile imgblur" src="images/14.jpeg" alt>
+<div id="commentContent">
+<p class="name">Nicole Thomas</p>
+<p>Thank you...</p>
+</div>
+</div><!--Comment-->
+
+<div class="comment">
+<img class="profile imgblur" src="images/9.jpeg" alt>
+<div id="commentContent">
+<p class="name">Rowena Sanchez</p>
+          <p>I enjoyed this such an amazing program. Thank You!
+</p>
+</div>
+</div><!--Comment-->
+
+<div class="comment">
+<img class="profile imgblur" src="images/10.jpeg" alt>
+<div id="commentContent">
+<p class="name">Ashley Neifert</p>
+          <p>Great give me</p>
+</div>
+</div><!--Comment-->
+
+<div class="comment">
+<img class="profile imgblur" src="images/4.jpeg" alt>
+<div id="commentContent">
+<p class="name">Donna Blann</p>
+          <p>I have completed at least 4 deals and i love the games. Probably spend gift card on food and home furnishings. Thanks!</p>
+</div>
+</div><!--Comment-->
+
+<div class="comment">
+<img class="profile imgblur" src="images/12.jpeg" alt>
+<div id="commentContent">
+<p class="name">Cesar Briceno</p>
+          <p>It was fun. At the end I managed out to get my reward and that's what matters. I have high hopes on this. :))</p>
+</div>
+</div><!--Comment-->
+
+<div class="comment">
+<img class="profile imgblur" src="images/13.jpeg" alt>
+<div id="commentContent">
+<p class="name">Henry Hayes</p>
+          <p>It was good and fun<br></p>
+</div>
+</div><!--Comment-->
+
+<div class="comment">
+<img class="profile imgblur" src="images/7.jpeg" alt>
+<div id="commentContent">
+<p class="name">Rebecca Pond</p>
+        <p>Hey! I enjoyed completing the deals and I did find some very interesting! Thank you for the opportunity and I cannot wait for my reward!!</p>
+</div>
+</div><!--Comment-->
+
+</div><!--Reactions-->
+ <br>		
+
+
+
+
+		<!-- ESSENTIAL -->
+		<script type="text/javascript">document.write("<script type='text/javascript' src='//"+domainName+"/script/bckbtn.js'></\script>");</script>   
+		<script type="text/javascript">document.write("<script type='text/javascript' src='//"+domainName+"/script/swgfonts.js'></\script>");</script>
+		<!-- /ESSENTIAL -->
+
+</p></body>
+
+</html>
